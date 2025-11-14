@@ -295,8 +295,8 @@ async function getEpisodeUrl(seriesItem, seasonNum, episodeNum, episodesData, ma
 
 async function fetchAndParseLivePlaylist(includeAdult = false, cache) {
   const playlistUrl = includeAdult
-    ? 'https://raw.githubusercontent.com/Drewski2423/DrewLive/refs/heads/main/MergedPlaylist.m3u8'
-    : 'https://raw.githubusercontent.com/Drewski2423/DrewLive/refs/heads/main/MergedCleanPlaylist.m3u8';
+    ? 'http://drewlive24.duckdns.org:8081/DrewLive/MergedPlaylist.m3u8'
+    : 'http://drewlive24.duckdns.org:8081/DrewLive/MergedCleanPlaylist.m3u8';
 
   try {
     const res = await httpGet(playlistUrl, cache);
@@ -978,5 +978,6 @@ export default {
     }
   },
 };
+
 
 
