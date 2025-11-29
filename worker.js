@@ -2,7 +2,7 @@
 // Movies/Series metadata from GitHub, file resolution on-demand
 
 /* ------------------ config ------------------ */
-const GITHUB_BASE = "https://raw.githubusercontent.com/dtankdempsey2/xc-vod-playlist/main/dist";
+const GITHUB_BASE = "https://xc-vod-files.pages.dev";
 const MOVIES_JSON = `${GITHUB_BASE}/movies.json`;
 const SERIES_JSON = `${GITHUB_BASE}/series.json`;
 const EPISODES_JSON = `${GITHUB_BASE}/episodes.json`;
@@ -978,6 +978,7 @@ export default {
     }
   },
 };
+
 
 
 
